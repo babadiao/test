@@ -2,7 +2,8 @@ import yaml
 if __name__ == '__main__':
  with open('./user.yml', 'r') as file:
      data = yaml.safe_load(file)
- user=data['user']    
+ user=data['user']   
+ print('Baba') 
  print(user['name'])    
  for role in user['roles']:
      print(role)
